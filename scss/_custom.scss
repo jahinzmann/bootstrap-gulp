@@ -9,3 +9,12 @@ tbody th {
 .edit-view {
   display: none;
 }
+
+.ui-sortable-placeholder {
+  background-color: $info;
+  border: 1px dashed $card-cap-bg;
+}
+
+.ui-sortable-handle {
+  cursor: pointer;
+}
