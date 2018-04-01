@@ -10,6 +10,9 @@ tbody th {
   display: none;
 }
 
+#round-print, #round-print * {
+  visibility: hidden;
+}
 .ui-sortable-placeholder {
   background-color: $info;
   border: 1px dashed $card-cap-bg;
@@ -17,4 +20,39 @@ tbody th {
 
 .ui-sortable-handle {
   cursor: pointer;
+}
+
+#round-print {
+  font-size: 2rem;
+}
+#round-print th, #round-print td {
+  padding: 1rem;
+}
+#round-print tr {
+  border-bottom: 1px solid $black;
+}
+#round-print tr:last-of-type {
+  border-bottom: none;
+}
+#round-print table {
+  width: 100%;
+  border: 1px solid $black;
+}
+
+.octicon {
+  padding-left: 4px; //flub
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #round-print, #round-print * {
+    visibility: visible;
+  }
+  #round-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
