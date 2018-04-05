@@ -77,3 +77,14 @@ div.mdl-progress::after {
     top: 0;
   }
 }
+
+/* prevent mask from cutting off animation */
+#navigation-carousel {
+ 
+  .carousel-item-next,
+  .active.carousel-item-right,
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    min-height: 90vh;
+  }
+}
