@@ -1,3 +1,37 @@
+body {
+  background-color:  $gray-500;
+}
+
+.jumbotron {
+  background: $color5;
+  color: $color2;
+  margin: 50px;
+  border: 1px solid $color2;
+}
+
+.btn {
+  color: $white;
+  background: $color2;
+  margin-left: 5px;
+  border: 1px solid $color3;
+}
+.btn:hover {
+  color: $white;
+  background: $color2;
+  border: 1px solid $color2;
+}
+
+#logout {
+  color: $color2;
+  background: $color5;
+}
+
+#logout:hover {
+  color: $cyan;
+  background: $color2;
+  border: 1px solid $color3;
+}
+
 .card {
   margin-bottom: 1.2rem;
 }
@@ -40,6 +74,7 @@ tbody th {
 }
 
 .octicon {
+  color: $color5;
   padding-left: 4px; //flub
 }
 
