@@ -67,9 +67,9 @@ $color4: #92CDCF;
 $color5: #EEEFF7;
 
 // todo: change these?
-$firstPlace: white;
-$secondPlace: white;
-$thirdPlace: white;
+$firstPlace: $color4;
+$secondPlace: rgb(141, 108, 141);
+$thirdPlace: rgb(231, 191, 116);
 
 $colors: () !default;
 $colors: map-merge((
