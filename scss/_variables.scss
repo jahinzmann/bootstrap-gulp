@@ -52,6 +52,11 @@ $color3: #FF7103;
 $color4: #7F4E28;
 $color5: #CC5B03;
 
+// todo: chnage these?
+$firstPlace: white;
+$secondPlace: white;
+$thirdPlace: white;
+
 $colors: () !default;
 $colors: map-merge((
   "blue":       $blue,
