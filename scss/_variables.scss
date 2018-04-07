@@ -46,13 +46,27 @@ $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
 // custom 
-$color1: #7F3902;
-$color2: #FF9C50;
-$color3: #FF7103;
-$color4: #7F4E28;
-$color5: #CC5B03;
+// $color1: #7F3902;
+// $color2: #FF9C50;
+// $color3: #FF7103;
+// $color4: #7F4E28;
+// $color5: #CC5B03;
 
-// todo: chnage these?
+// neutral blue https://color.adobe.com/Neutral-Blue-color-theme-22361/
+// $color1: #193441;
+// $color2: #3E606F;
+// $color3: #91AA9D;
+// $color4: #D1DBBD;
+// $color5: #FCFFF5;
+
+// quiet cry https://color.adobe.com/Quiet-Cry-color-theme-124171/
+$color1: #1C1D21;
+$color2: #31353D;
+$color3: #445878;
+$color4: #92CDCF;
+$color5: #EEEFF7;
+
+// todo: change these?
 $firstPlace: white;
 $secondPlace: white;
 $thirdPlace: white;
@@ -85,14 +99,15 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "primary":    $primary,
+  "primary":    $color3,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "main":    $color2
 ), $theme-colors);
 // stylelint-enable
 

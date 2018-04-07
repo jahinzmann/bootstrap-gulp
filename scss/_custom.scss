@@ -2,42 +2,22 @@ body {
   background-color:  $gray-500;
 }
 
+.logo {
+  span:nth-of-type(1) {
+    font-weight: 900;
+  }
+  span:nth-of-type(2) {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
-}
-
-.jumbotron {
-  background: $color5;
-  color: $color2;
-  margin: 50px;
-  border: 1px solid $color2;
-}
-
-.btn {
-  color: $white;
-  background: $color2;
-  margin-left: 5px;
-  border: 1px solid $color3;
-}
-.btn:hover {
-  color: $white;
-  background: $color2;
-  border: 1px solid $color2;
-}
-
-#logout {
-  color: $color2;
-  background: $color5;
-}
-
-#logout:hover {
-  color: $cyan;
-  background: $color2;
-  border: 1px solid $color3;
 }
 
 .card {
@@ -111,6 +91,10 @@ body {
 
 /* #endregion */
 
+th#totalScore {
+  border:0px;
+}
+
 tbody th {
   cursor: pointer;
 }
@@ -123,7 +107,7 @@ tbody th {
   visibility: hidden;
 }
 .ui-sortable-placeholder {
-  background-color: $info;
+  background-color: $color1;
   border: 1px dashed $card-cap-bg;
 }
 
@@ -149,10 +133,8 @@ tbody th {
 }
 
 .octicon {
-  color: $color5;
   padding-left: 4px; //flub
 }
-
 /* #region firebase loading */
 .mdl-shadow--2dp {
   box-shadow: none;
