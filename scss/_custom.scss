@@ -13,9 +13,8 @@ body {
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-
+  min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 90vh; /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
 }
@@ -23,8 +22,6 @@ body {
 .card {
   margin-bottom: 1.2rem;
 }
-
-/* #region Round display */
 
 #leaderboard {
   counter-reset: leader;
@@ -61,7 +58,7 @@ body {
 }
 
 #display-carousel {
-  min-height: 90vh;
+  min-height: 85vh;
   .carousel-item {
     .intro {
       > * {
@@ -71,7 +68,7 @@ body {
     .intro,
    > h1 {
       display: flex;
-      height: 90vh;
+      height: 85vh;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -85,13 +82,13 @@ body {
   .active.carousel-item-right,
   .carousel-item-prev,
   .active.carousel-item-left {
-    min-height:90vh;
+    min-height:85vh;
   }
 }
 
 /* #endregion */
 
-th#totalScore {
+th.plain {
   border:0px;
 }
 
@@ -99,7 +96,7 @@ tbody th {
   cursor: pointer;
 }
 
-.edit-view, .loaded, .option {
+.edit-view, .loaded, .option, #question-indicator {
   display: none;
 }
 
